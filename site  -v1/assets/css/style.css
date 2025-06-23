@@ -1,0 +1,122 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;  
+  font-style: normal;
+}
+
+
+.header1{
+    height: 35px;
+    width: 100%;
+   background: linear-gradient(135deg, #36A5C9 0%, #8BC9DD 100%);
+}
+
+.header2{
+height: 90px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header2_area{
+    width: 100%;
+    max-width: 1300px;
+   
+    height: 100%;
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.escudo img{
+    height:100px ;
+    width: auto;
+}
+
+.escudo{
+display: flex;
+align-items: center;
+}
+
+.escudo_texto{
+    display: flex;
+    flex-direction: column;
+    
+   
+    
+}
+
+.titulo1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.titulo2{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#menu{
+  margin-left: 20px;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+       margin-left: 40px;
+}
+
+#menu a:hover{
+   color: #8BC9DD;
+  padding-bottom: 10px;
+}
+
+.menu1{
+    width:300px ;
+    height: 600px;
+    background-color: #EEECF3;
+    position: absolute;
+    z-index: 99;
+    margin-left: 800px;
+    top: 100px;
+   display: none;
+}
+
+
+.menu2{
+     width:300px ;
+    height: 600px;
+    background-color:#EEECF3ed;
+    position: absolute;
+    z-index: 99;
+    margin-left: 980px;
+    top: 100px;
+     display: none;
+}
+.menu3{
+
+
+    width:300px ;
+    height: 600px;
+    background-color: #EEECF3;
+    position: absolute;
+    z-index: 99;
+    margin-left: 1100px;
+    top: 100px;
+  display: none;
+
+
+
+}
