@@ -1,0 +1,155 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;  
+  font-style: normal;
+}
+
+
+.header1{
+    height: 35px;
+    width: 100%;
+   background: linear-gradient(135deg, #36A5C9 0%, #8BC9DD 100%);
+}
+
+.header2{
+height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header2_area{
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.escudo img{
+    height:100px ;
+    width: auto;
+}
+
+.escudo{
+display: flex;
+align-items: center;
+}
+
+.escudo_texto{
+    display: flex;
+    flex-direction: column;
+    
+   
+    
+}
+
+.titulo1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.titulo2{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#menu{
+
+display: flex;
+
+
+}
+.menu1, .menu2, .menu3, .menu4{
+    margin-right: 50px;
+    position: relative;
+
+}
+
+.menu1_sub, .menu2_sub, .menu3_sub {
+    position: absolute;
+    top: 100%;
+    background-color: #EEECF3;
+    width: 220px;      
+    min-height: 180px;  
+   margin-top: 5px;
+    box-sizing: border-box;
+      opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    display: block; 
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+
+.menu1_ativ a, .menu2_ativ a, .menu3_ativ a, .menu4 a{
+
+text-decoration: none;
+color: #000000;
+padding-bottom: 50px;
+}
+
+.menu1_ativ a:hover, .menu2_ativ a:hover, .menu3_ativ a:hover, .menu4 a:hover{
+    color: #8BC9DD;
+     
+}
+
+.menu1_sub a, .menu2_sub a, .menu3_sub a{
+
+text-decoration: none;
+color: #000000;
+padding-top: 20px;
+display: block; 
+padding-left: 50px;
+padding-bottom: 30px;
+
+
+}
+.menu1_sub a:hover, .menu2_sub a:hover, .menu3_sub a:hover{
+background-color: #36A5C9;
+}
+.menu1_sub a:last-child, .menu2_sub a:last-child, .menu3_sub a:last-child{
+     border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+
+.menu1:hover .menu1_ativ a,
+.menu1:hover .menu1_sub ~ .menu1_ativ a,
+.menu1:has(.menu1_sub:hover) .menu1_ativ a {
+    color: #36A5C9;
+}
+
+.menu2:hover .menu2_ativ a,
+.menu2:has(.menu2_sub:hover) .menu2_ativ a {
+    color: #36A5C9;
+}
+
+.menu3:hover .menu3_ativ a,
+.menu3:has(.menu3_sub:hover) .menu3_ativ a {
+    color: #36A5C9;
+}
+
+.menu1:hover .menu1_sub,
+.menu2:hover .menu2_sub,
+.menu3:hover .menu3_sub {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
